@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- Chapter2 기본문서 다루기 -->
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>201901816_이재완</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="initCanvas()">
+
+    <!-- Chatper3 시맨틱 태그 사용 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#소개">소개</a></li>
+                <li><a href="#진로">진로</a></li>
+                <li><a href="#준비">준비</a></li>
+                <li><a href="#영상">영상</a></li>
+                <li><a href="#문의">문의</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="소개">
+            <h1>Introduction</h1>
+            <hr>
+            <h2 style="text-align: center;">소개</h2>
+            <div class="intro">
+            <table>
+                <tr>
+                    <td>
+                        <!-- Chapter11 canvas를 활용한 이미지 삽입 -->
+                        <!-- Chatper5 애니메이션 -->
+                        <canvas class="face" id="myCanvas" style="background-color: aliceblue;">
+                        </canvas>
+
+                    </td>
+                    <td>
+                        <div class="introdiv1" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                            공주대학교 천안캠퍼스 소프트웨어학과 19학번 이재완입니다.
+                        </div>
+                        <div class="introdiv1" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                            게임 기획자를 꿈꾸고 있고, 밸런스 기획으로 가고싶습니다.
+                        </div>
+
+                        <div class="introdiv1" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                            저의 장점은 긍정적이고 적극적이다라고 말할 수 있습니다. 힘든 일이 있어도
+                            긍정적으로 넘기고, 해야되는 일들을 적극적으로 한다는 장점이 있습니다.
+                        </div>
+
+                        <div class="introdiv1" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                            아직 많이 부족하고 많은 기술은 없지만 게임 기획자가 되기위해
+                            많은 노력을 하고 있습니다 !
+                        </div>
+                        <br>
+
+                    </td>
+
+                </tr>
+            </table>
+            </div>
+            <br>
+            <div class="table-wrapper">
+                <form class="introform1">
+                    <h3>게임 기획자란?</h3>
+                    <div class="introdiv2" id="myDiv" contenteditable="true" oninput="adjustSize()">
+
+                        게임 개발자 가운데 기획 및 설계 업무를 담당하는 직군
+
+                    </div>
+                </form>
+            </div>
+            <form class="introform2">
+                <h3>기획자가 꿈인 이유?</h3>
+                <div class="introdiv3" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                    <!-- 본인 성장 과정 -->
+                    저는 사촌형의 영향으로 8살 때부터 게임을 시작하여 현재까지 꾸준히 게임을 즐기고 있습니다. 게임에 대한 열정이 많았고,
+                    자신있는 재능을 발휘하여 상위 0.1%까지 올라가는 경험도 있었습니다. 그러나 상위 티어로 올라갈수록 게임 내 밸런스가 망가지는 것을 보면서 실망스러움을 느꼈습니다.
+                    이로 인해 게임 밸런스 기획자가 되면 이러한 문제를 해결할 수 있을지 고민하게 되었습니다.
+
+                    저의 게임 기획자로의 꿈은 배틀그라운드라는 게임이 출시될 때부터 확고해졌습니다. FPS 게임은 다양한 총기들이 존재하고, 각각의 특징과 능력치가 게임의 재미를 결정하는 중요한
+                    요소입니다. 만약 총기들의 특징이 없거나 유사하다면 게임은 재미가 없을 것입니다. 또한, 데미지 설정을 잘못하면 게임 내 밸런스가 깨져 플레이어들에게 불만이 생길 수 있습니다.
+                    게임을 사랑하는 입장에서 이러한 문제들이 증가하면서 직접 밸런스를 조절하고 싶다는 생각이 들었습니다.
+                </div>
+            </form>
+
+            <form class="introform3">
+                <h3>프로젝트를 하면서 겪었던 어려움</h3>
+                <div class="introdiv3" id="myDiv" contenteditable="true" oninput="adjustSize()">
+                    <!-- 프로젝트를 하면서 겪었던 과정 -->
+                    제가 자바프로그래밍2 과목에서 팀 프로젝트를 진행했습니다. 프로젝트는 라즈베리파이와 안드로이드를 활용하여 SmartFactory라는 주제로 공장 자동 관리 시스템을 개발했습니다.
+                    팀원들과는 연락과 회의에서는 문제가 없었지만, 기술적인 어려움이 많았습니다. 안드로이드, 자바, 스프링, 라즈베리파이, 데이터베이스 등 다양한 기술을 사용해야 했기 때문입니다.
+                    이에 따라 학교 수업 외에도 많은 시간을 투자하여 공부했습니다.
+                    프로젝트를 진행하면서 어려움을 겪었지만, 검색과 선배들에게 질문하는 등 다양한 방법을 통해 문제를 해결해 나갔습니다. 우리는 공장의 정보를 등록하면 어플리케이션에서 해당 정보를
+                    확인할 수 있는 실시간 정보 시스템을 개발했습니다. 결과적으로 우리 팀은 모두 성적을 잘 받았습니다. 그러나 성적보다는 팀원들과의 소통, 역량 강화 등 다양한 능력을 키웠고,
+                    저 개인적으로도 크게 성장했다고 느꼈습니다.
+                </div>
+            </form>
+
+        </section>
+        <form class="pathform">
+            <h1>Path</h1>
+            <hr>
+            <section id="진로">
+
+                <h2>진로</h2>
+                <p>관심 게임 : FPS (First-Person Shooter)</p>
+                <p>관심 기업 : 넥슨, 크래프톤, 블리자드</p>
+                <div class="company-info active" id="nexon-info">
+                    <table>
+                        <tr>
+                           <td>
+                            <h4>넥슨</h4>
+                           </td>
+                           <td>
+                            <div id="prev-button" onclick="showPrevCompany()">&lt;</div>
+                           </td>
+                           <td>
+                            <div id="next-button" onclick="showNextCompany()">&gt;</div>
+                           </td>
+                        </tr>
+                    </table>
+                    <a href="https://www.nexon.com/Home/Game"><img src="images/넥슨.jpg" alt=""></a>
+                    <p>대표적인 FPS 게임으로는 Counter-Strike Online, Sudden Attack, Black Squad 있고, 국내에서 가장 큰 게임 기업이라 할 수 있습니다.</p>
+                </div>
+            
+                <div class="company-info" id="kraft-info">
+                    <table>
+                        <tr>
+                           <td>
+                            <h4>크래프톤</h4>
+                           </td>
+                           <td>
+                            <div id="prev-button" onclick="showPrevCompany()">&lt;</div>
+                           </td>
+                           <td>
+                            <div id="next-button" onclick="showNextCompany()">&gt;</div>
+                           </td>
+                        </tr>
+                    </table>
+                    <a href="https://www.krafton.com/"><img src="images/크래프톤.png" alt=""></a>
+                    <p>BattleGround를 만든 회사이며, 3가지 기업 중 갈수만 있다면 제일 가고싶은 기업입니다.</p>
+                </div>
+            
+                <div class="company-info" id="blizzard-info">
+                    <table>
+                        <tr>
+                           <td>
+                            <h4>블리자드</h4>
+                           </td>
+                           <td>
+                            <div id="prev-button" onclick="showPrevCompany()">&lt;</div>
+                           </td>
+                           <td>
+                            <div id="next-button" onclick="showNextCompany()">&gt;</div>
+                           </td>
+                        </tr>
+                    </table>
+                    <a href="https://www.blizzard.com/ko-kr/"><img src="images/블리자드.png" alt=""></a>
+                    <p>Overwatch라는 게임으로 새로운 장르의 FPS, 하이퍼 FPS 장르를 유행 시켰다. 국내에서 가장 유명한 해외 게임 기업입니다.</p>
+                </div>
+            
+               
+                <br>
+
+                <h2>기술</h2>
+                <p>기획자라는 직종이 소프트웨어학과의 기술들이 직접적으로 필요한 경우는 없습니다.</p>
+                <p>하지만, 개발자와 커뮤니케이션이 중요한 부분이기 때문에 개발을 해봤더라면 도움이 될 것이라 생각합니다.</p>
+
+                <ul style="list-style-type: none;">
+                    <h3>필요 개발 기술</h3>
+                    <li>
+                        <details>
+                            <summary>
+                                C++
+                            </summary>
+                            <table>
+                                <tr>
+                                    <td> 게임 개발에서 가장 일반적으로 사용하는 언어로, 성능이 뛰어나기 떄문에 대규모 게임에 사용되며, 매우 복잡한 게임 엔진을 개발할 수 있습니다.
+                                        대표적인 게임으로는 위에서 말한 배틀그라운드가 있습니다.
+                                    </td>
+                                    <td>
+                                        <!--   Chapter2 이미지 삽입   -->
+                                        <div class="needskill"><img src="images/C++.png" alt=""></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </details>
+
+                    </li>
+                    <li>
+                        <details>
+                            <summary>C#</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        유니티 엔진에서 사용되며, C++보다 쉬운 문법을 가지고 있어 개발 기간을 단축시키는 역할을 합니다.
+                                        또한 게임 개발에 필요한 기능들을 라이브러리로 제공하기 때문에 많이 사용합니다.
+                                    </td>
+                                    <td>
+                                        <div class="needskill">
+                                            <img src="images/CShop.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Unreal Engine</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Epic Games에서 개발한 게임 엔진으로 높은 그래픽과 다양한 플랫폼 지원, 강력한 모바일 게임 개발 기능을 가지고 있습니다.
+                                        또한, 무료로 사용할 수 있으며 게임을 개발하는데 다양한 도우과 라이브러리를 제공하기 때문에 게임 개발을 하는데 효율적인 개발 툴 입니다.
+                                        C++ 언어를 사용합니다.
+                                    </td>
+                                    <td>
+                                    <td>
+                                        <div><img src="images/언리얼엔진.png" alt=""></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </details>
+
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Unity Engine</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        유니티 테크놀로지스에서 개발한 크로스 플랫폼 게임 엔진이며, 3D/2D/ 게임 개발과 VR, AR 등등 여러 분야에서도 사용됩니다.
+                                        C# 언어를 사용하며, 무료로 사용할 수 있는 엔진입니다.
+                                    </td>
+                                    <td>
+                                        <div><img src="images/유니티.png" alt=""></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </details>
+
+                    </li>
+
+                </ul>
+
+                <br>
+                <ul style="list-style-type: none;">
+                    <h3>필요 기획 기술</h3>
+                    <li>
+                        <details>
+                            <summary>커뮤니케이션 능력</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        게임 기획자는 여러 파트를 종합하는 중심 인물로, 여러 사람을 설득하는 능력을 반드시 갖추어야 한다고 생각합니다. 게임 개발을 위해 기획한 안을
+                                        결제 권한을 가진 임원들에게 승인을 받아야 하는데, 이를 위해서는 개발 기획안을 설득력 있게 전달해야 합니다. 구체적으로 개발 시간이 얼마나
+                                        소요될지, 게임의 수익성이 있는지,
+                                        필요한 인력과 비용 등에 대해 구체적인 설득이 필요합니다. 또한, 프레젠테이션을 만들고 진행하는 능력도 필수적입니다.
+                                    </td>
+                                    <td>
+                                        <div><img src="" alt=""></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </details>
+
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>FPS 게임에 대한 이해</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        게임을 성공시키기 위해서는 다른 게임에 대한 이해도가 필수적입니다. 특히 FPS 게임의 경우, 각 총기의 데미지, 종류 등을 밸런스 조정하는
+                                        것이 매우 중요합니다.
+                                        또한, 1인칭과 3인칭 시점의 변화도 게임의 성공에 큰 영향을 미칩니다. 예를 들어, 2017년 이전에는 1인칭 FPS 게임이 유행했지만,
+                                        배틀그라운드의 출시로 인해 3인칭 FPS 게임이 인기를 끌기 시작했습니다. 이렇게 기획자는 게임의 성공을 위해 해당 게임에 대한 이해를 바탕으로
+                                        소비자를 만족시켜야 합니다.
+                                    </td>
+                                    <td>
+                                        <div><img src="" alt=""></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </details>
+
+                    </li>
+                    <li>
+                        <details>
+                            <summary>게이머에 대한 이해</summary>
+                            <table>
+                                <tr>
+                                    <td>
+                                        게임 기획자는 게이머들의 문화를 이해하고 그들에게 맞는 게임을 디자인해야 합니다. 또한, 해당 시기의 유행하는 게임 문화를 잘 파악하고, 적절한
+                                        게임 기획을 수행하는 것이 매우 중요합니다.
+                                        만약 게이머들을 제대로 이해하지 못하고 개인적인 신념이나 고집으로만 이끌려간다면 게임은 실패할 수 있습니다.
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </details>
+                    </li>
+                </ul>
+                <br>
+
+                <ul>
+                    <h3>보유기술 및 역량</h3>
+                    <li>
+                        <p>Java</p>
+                        <p>학교 교육 과정에서 많이 사용하고 있으며, 팀 프로젝트를 통한 SmartFactory 개발,
+                            기부단체 및 자선단체 모아보기 어플리케이션을 통해 KBSC소프트웨어 경진대회를 나간 경험이 있습니다.</p>
+                    </li>
+                    <li>
+                        <p>C++</p>
+                        <p>게임 개발을 해보고싶어서 강의를 구매해서 C++를 활용하여 알고리즘을 구현해봤습니다.</p>
+                    </li>
+                    <li>
+                        <p>C# (Unity Engine)</p>
+                        <p>현재 프로젝트를 진행 중에 있으며, 2D 슈팅게임을 개발하면서 공부 중입니다.</p>
+                    </li>
+                    <li>
+                        <p>동아리 회장</p>
+                        <p>Primitive 동아리 회장을 맡고 있습니다. 동아리 내에서 창업동아리 팀장, 신입생 교육 등
+                            여러가지 활동을 하고 있으며, 회장이라는 직책을 통해 사람들과의 소통 능력을 기르고 있습니다.
+                        </p>
+                    </li>
+                </ul>
+
+
+
+            </section>
+        </form>
+
+        <h1>PreParation</h1>
+        <hr>
+        <section id="준비">
+            <h2>준비</h2>
+            <p>게임 기획자라는 정보가 많이 알려지지 않았습니다. 하지만 게임잡
+                <span><a href="http://www.gamejob.co.kr/main/home">(GAMEJOB)</a></span>
+                이라는 어플리케이션을 통해 채용정보, 취업정보 등 여러가지 정보를 얻으며 어떤 기술이 필요하고
+                어떻게 준비해야하는지 배우고 있습니다.
+            </p>
+            <br>
+            <h3>부족 역량 및 기술</h3>
+            <ul>
+                <li>
+
+                    <button class="techbutton" onclick="toggleVisibility('plan')">기획 능력</button>
+                    <div id="plan">
+                        <p>개발 공부는 중요하지만, 가장 핵심적인 공부는 기획 공부입니다.
+                            기획자로서 필요한 능력에는 소통 능력, 문서 정리, 발표 기술, 게임에 대한 이해도 등이 포함됩니다.
+                            앞서 언급한 대로, 필요한 기획 기술을 습득하는 것이 필수입니다.
+                        </p>
+                    </div>
+                </li>
+                <br>
+                <li>
+
+
+                    <button class="techbutton" onclick="toggleVisibility('development')">개발 기술</button>
+                    <div id="development" style="display: none;">
+                        <p>기획은 개발자들과의 원활한 소통을 위해 개발 기술을 통해 내용을 전달하는 것입니다.
+                            따라서, 기획자는 개발 공부를 통해 개발자들과의 소통을 원활하게 할 수 있는 기술을 갖추어야 합니다.
+                        <p>Unreal Engine, Unity Engine을 통한 게임 개발 경험 쌓기</p>
+                        </p>
+                    </div>
+                </li>
+                <br>
+                <li>
+
+                    <button class="techbutton" onclick="toggleVisibility('communication')">커뮤니케이션 능력</button>
+                    <div id="communication" style="display: none;">
+                        <p>커뮤니케이션 능력은 기획자로서 꼭 길러야 하는 필수적인 능력입니다.
+                            개발자와의 소통은 물론이고, 기획자로서 게임 플레이어와의 소통도 중요한 부분입니다. 만약 소통 능력이 부족하다면, 기획자로서의 역량이 충분하지 않다고 판단될 수
+                            있습니다.
+                            따라서, 커뮤니케이션 능력을 꼭 갖추어야 합니다.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <h3>공부 계획 및 목표</h3>
+            <!-- Chapter5 표 꾸미기 -->
+            <table class="object" border="1">
+                <thead>
+                    <tr>
+                        <th colspan="4">일정</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>여름방학</td>
+                        <td colspan="3">
+                            <p>SQLD 자격증 취득 : 데이터베이스론 수업으로 기초를 다지고 방학이 시작되면 교재와 강의를 통한 공부(SQLD 접수 08.07 ~ 08.11)</p>
+                            <p>게임 개발을 위한 C++ 및 C# 공부 : 인프런 강의를 통한 C++과 C# 공부 (강의명 : 레트로의 유니티 C# 게임 프로그래밍 에센스, C++과 언리얼로
+                                만드는 MMORPG 게임 개발 시리즈)</p>
+
+                            <p> 창업동아리 어플 개발 : 상담, 멘토링 플랫폼이라는 주제로 어플리케이션을 개발 (깃허브를 활용한 앱 개발)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3학년 2학기</td>
+                        <td colspan="3">
+                            <p>게임 기획자 강의 : 인프런 강의를 통한 기획자에 대한 지식 습득(강의명 : [따라하면 취업되는 게임기획]MORPG 게임밸런스 기획) </p>
+                            <p>게임 개발 시작 : C++를 활용한 1인칭 슈팅 게임 개발 (개인 프로젝트)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>겨울방학</td>
+                        <td colspan="3">
+                            <p>정보처리기사 자격증 공부 : 졸업 요건을 채우기위한 정보처리기사 자격증 공부</p>
+                            <p>개발 공모전 참가 : 게임 개발 공모전을 통해 여러 개발 경험 쌓기</p>
+                            <p>문서 정리 및 작성 공부 : 기획자의 필수적인 능력인 문서 능력 공부</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4학년 ~ 졸업</td>
+                        <td colspan="3">
+                            <p>정보처리기사 자격증 취득</p>
+                            <p>학원을 통한 공부 : 개인 공부만으로는 부족하다고 판단하여 국비학원 등록</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3>그 외 배우면 좋은 기술</h3>
+            <ul>
+                <li>
+                    <p>
+                        인공지능
+                    </p>
+                    <p>
+                        현재 가장 최근 이슈인 ChatGPT를 통해 알 수 있듯이, 인공지능은 모든 분야에서 사용되고 있습니다. 인공지능에 대한 이해가 부족하다면 점차 뒤쳐질 수 있습니다.
+                        인공지능의 성장이 계속되면 불안한 미래가 올 것으로 생각됩니다. 그러나 이러한 혁신적인 인공지능을 활용하지 않는 것은 어리석은 행동입니다.
+                        개인적으로는 엄격한 관리와 법을 통해 인공지능의 발전이 이루어져야 한다고 생각합니다.
+                    <P> 결론 : 인공지능 공부는 필수
+                    </P>
+
+                    </p>
+                </li>
+            </ul>
+
+
+        </section>
+
+        
+
+            <section id ="영상">
+            <h3>영상</h3>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7CEt9gHqh2I" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            
+
+
+        </section>
+   
+        <br> <br> <br>
+
+        <section id="문의">
+
+
+            <footer>
+
+                <div>
+                    <h3>문의</h3>
+                    <p>개발자 : 이재완
+                        <br>전화번호 : 010-5609-9787
+                        <br>이메일 : ejw04199@naver.com
+                        <br>깃허브 : <a class="git" href="https://github.com/YeejaeWan">YeeJaeWan</a>
+                    </p>
+                </div>
+            </footer>
+
+        </section>
+
+        <!-- Chapter3 웹 폼(textarea) -->
+        <div id="text-area">
+            <textarea cols="90" rows="8" placeholder="메모"></textarea><br>
+        </div>
+        <br>
+        <button class="timebutton" onclick="toggleCurrentDateTime()">현재 시간</button>
+        <br>
+
+
+        <script src="app.js">
+
+
+
+
+        </script>
+
+
+</body>
+
+</html>
