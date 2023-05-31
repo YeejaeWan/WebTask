@@ -234,6 +234,11 @@ footer h3 {
     padding: 50px;
 }
 
+
+.introform4 {
+    padding: 50px;
+}
+
 .introdiv1 {
     width: 400px;
     background-color: #394867;
@@ -249,6 +254,12 @@ footer h3 {
 }
 
 .introdiv3 {
+    background-color: #394867;
+    color: white;
+    padding: 10px;
+}
+
+.introdiv4 {
     background-color: #394867;
     color: white;
     padding: 10px;
